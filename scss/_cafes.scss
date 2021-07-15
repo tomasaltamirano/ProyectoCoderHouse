@@ -1,0 +1,62 @@
+.mainTres {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    align-content: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    .img{
+      width: 100%;
+      height: auto;
+      img{
+        border-radius: 10px;
+      }
+    }
+    .parrafo{
+      margin-left: 20px;
+      width: 100%;
+      text-align: justify;
+      h4{
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+  } 
+  .productos {
+    section{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 1em;
+    }
+    h5{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    
+  }
+  
+  .productos {
+    section {
+      .foto{
+        img{
+          width: 100%;
+          vertical-align: top;
+          opacity: .7;
+        }
+      }
+    }
+    
+  }
+  
+  .productos {
+    section{
+      .foto{
+        img:hover{
+          opacity: 1;
+          transition:all .4s ease;
+        }
+      }
+    }
+    
+  }

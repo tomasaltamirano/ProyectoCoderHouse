@@ -1,0 +1,51 @@
+@media screen and (max-width:600px) {
+    body {
+      width: auto;
+      font-size: 0.875em;
+    }
+    .mainTres {
+      flex-direction: column;
+      width: 100%;
+    }
+    .mainDos{
+      div{
+        width: 100%;
+        .img{
+          width: auto;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+        .texto{
+          width: 100%;
+        }
+      }
+    }
+    .articulo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    body {
+      width: auto;
+      font-size: 0.875em;
+    }
+    .articulo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .mainTres {
+      flex-wrap: wrap;
+    }
+    .articulo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    
+  }

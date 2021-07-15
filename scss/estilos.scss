@@ -1,0 +1,132 @@
+@import "reseteo.scss";
+@import "nosotros.scss";
+@import "cafes.scss";
+@import "mediaqueries.scss";
+
+//estilos generales
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    max-width: auto;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+//estilos para el fondo
+  .container {
+    background-image: url(../img/bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+  }
+//estilos del grid
+  .contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+.contenedor__header{
+  grid-area: header;
+}
+
+.main { 
+  grid-area: main; 
+}
+
+.footer { 
+  grid-area: footer;
+ }
+//menu de navegacion
+.navBar {
+  list-style: none;
+  li {
+    display: inline-block;
+    margin: 10px;
+    padding-top: 10px;
+  }
+    a {
+      padding: 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+}
+.navBar li a:hover {
+  background: #f2542d;
+  border-radius: 20px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+    h1{
+        font-size: 1.75em;
+        color: #fcf7ed;
+        text-transform: uppercase;
+        font-weight: 600;
+        
+    
+    }
+}
+//estilos para la frase y el boton
+.main__frase{
+    p {
+        color: #fff;
+        margin-bottom: 40px;
+    }
+  margin-right: 25px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top:20px
+  
+}
+.main__btn--p{
+  display: inline-block;
+  padding: 0.5em;
+  margin: 10px 0;
+  color:#fff;
+  border-radius: 20px;
+  background: #f2542d;
+}
+.main__btn--p:hover{
+  background: #F04419;
+}
+//estilos para el footer
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: static;
+  align-items: center;
+  font-size: 1.25em;
+}
+.footer__facebook--fb{
+  padding-right: 10px;
+  margin-right: 20px;
+  color: #fff;
+  transition:color .5s linear;
+}
+
+.footer__instagram--ig {
+  @extend .footer__facebook--fb
+}
+
+.footer__twitter--tw {
+  @extend .footer__facebook--fb
+}
+.footer__facebook--fb:hover {
+  cursor: pointer;
+  color: #f2542d;
+}
