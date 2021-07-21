@@ -1,3 +1,7 @@
+@mixin titulo{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 .mainTres {
     display: flex;
     flex-direction: row;
@@ -18,8 +22,7 @@
       width: 100%;
       text-align: justify;
       h4{
-        font-size: 20px;
-        margin-bottom: 20px;
+        @include titulo;
       }
     }
   } 
