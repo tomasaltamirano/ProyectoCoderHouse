@@ -1,13 +1,13 @@
 main {
-    width: 100%;
-    max-width: 70%;
-    margin: auto;
     .contacto{
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
         color: #b7986d;
         margin-bottom: 20px;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
     }
 
 }
