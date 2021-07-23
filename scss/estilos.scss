@@ -1,6 +1,7 @@
 @import "reseteo.scss";
 @import "nosotros.scss";
 @import "cafes.scss";
+@import "contacto.scss";
 @import "mediaqueries.scss";
 
 //estilos generales
@@ -48,6 +49,9 @@ body {
  }
 //menu de navegacion
 .navBar {
+  display: flex;
+  align-items: center;
+  justify-content:center;
   list-style: none;
   li {
     display: inline-block;
@@ -81,21 +85,26 @@ body {
 }
 //estilos para la frase y el boton
 .main__frase{
-    p {
+p {
         color: #fff;
         margin-bottom: 40px;
     }
-  margin-right: 25px;
-  color: #fff;
-  text-align: center;
-  padding-bottom: 50px;
-  padding-top:20px
-  
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top:20px;
 }
+    
+  
 .main__btn--p{
+  text-align: center;
   display: inline-block;
   padding: 0.5em;
-  margin: 10px 0;
   color:#fff;
   border-radius: 20px;
   background: #f2542d;
@@ -105,16 +114,17 @@ body {
 }
 //estilos para el footer
 .footer {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  justify-items: center;
   position: static;
   align-items: center;
   font-size: 1.25em;
 }
 .footer__facebook--fb{
-  padding-right: 10px;
-  margin-right: 20px;
+  padding: 10px;
   color: #fff;
   transition:color .5s linear;
 }

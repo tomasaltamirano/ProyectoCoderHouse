@@ -1,0 +1,21 @@
+main {
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+    .contacto{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        color: #b7986d;
+        margin-bottom: 20px;
+    }
+
+}
+form{
+    margin-top: 40px;
+    padding-top: 40px;
+    .btn-primary{
+        background-color: #b7986d;
+        text-align: center;
+    }
+}

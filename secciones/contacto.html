@@ -10,12 +10,11 @@
     <link rel="icon" href="../img/favicon.svg" type="image/svg" sizes="32x32">
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
     <title>Contacto</title>
 </head>
 <body  class="background">
     <header>
-        <nav class="navBar color">
+        <nav class="color">
             <ul >
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../secciones/nosotros.html">Nosotros</a></li>
@@ -23,83 +22,48 @@
                 <li><a href="../secciones/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <hr>
     </header>
-    <main>
-    <h2>Envianos un mensaje</h2>
-    <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Direccion</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Direccion 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Provincia</label>
-          <select id="inputState" class="form-select">
-            <option selected>Elegir...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Codigo postal</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Aceptar terminos
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Ingresar</button>
-        </div>
-      </form>
-    <!--
-    <form action="" method="">
-        <label for="nombre"></label>
-        <input type="text" placeholder="Nombre:" name="nombre" maxlength="10" id="nombre">
-        <br>
-        <label for="apellido"></label>
-        <input type="text" placeholder="Apellido" id="apellido">
-        <br>
-        <label for="email"></label>
-        <input type="email" placeholder="Email:" id="email">
-        <br>
-        <br>
-        <label for="genero">Genero</label>
-        <select name="genero" id="genero">
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">Otro</option>
-        </select>
-        <br>
-        <br>
-        <input type="checkbox" id="sub"> <label for="sub">Subscribirse al Newsletter</label>
-        <br>
-        <br>
-        <textarea name="Mensaje" id="texto" placeholder="Mensaje:" maxlength="100"></textarea>
-        <br>
-        <input type="reset" value="Limpiar formulario">
-        <input type="submit" value="Enviar formulario">
-    </form>-->
+<main>
+<h4>Contactanos</h4>
+<div class="contacto">
+  <div>
+    <ion-icon name="location-outline"></ion-icon>
+    <p>9 de Julio 345 CABA</p>
+  </div>
+  <div>
+    <ion-icon name="call-outline"></ion-icon>
+    <p>+54 1122334455</p>
+  </div>
+  <div>
+    <ion-icon name="mail-outline"></ion-icon>
+    <p>correo@correo.com</p>
+  </div>
+</div>
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Apellido">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput">Correo</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Correo">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+
 </main>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

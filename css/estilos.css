@@ -60,6 +60,7 @@ p {
   grid-template-areas: "headerDos headerDos" "mainDos mainDos" "footerDos footerDos"; }
 
 .headerDos {
+  width: 100%;
   justify-self: center;
   grid-area: headerDos; }
 
@@ -74,16 +75,60 @@ p {
 
 .background {
   background-color: #EBEBEB;
-  max-width: 1000px;
   margin: auto; }
 
-.color li a {
-  color: #1F1F1F; }
+.color {
+  padding-top: 50px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none; }
+  .color li {
+    display: inline-block;
+    margin: 10px;
+    padding-top: 10px; }
+    .color li a {
+      color: #fff;
+      padding: 10px;
+      text-decoration: none; }
 
-.mainDos section h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  padding-bottom: 20px; }
+.color li a:hover {
+  color: #B7986D; }
+
+.mainDos .banner {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  height: 300px;
+  background: #CCC;
+  overflow: hidden; }
+  .mainDos .banner .textoEncima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .mainDos .banner .textoEncima p {
+      color: #F5F2EB;
+      text-transform: uppercase;
+      font-size: 2em;
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 10px;
+      line-height: 2em; }
+  .mainDos .banner img {
+    width: 100%;
+    height: auto; }
+
+.mainDos section {
+  max-width: 70%;
+  margin: auto; }
+  .mainDos section h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 40px;
+    margin-top: 40px;
+    padding-bottom: 20px; }
 
 .articulo {
   margin-top: 50px;
@@ -93,7 +138,7 @@ p {
   align-items: center; }
   .articulo .texto {
     text-align: justify;
-    padding: 20px;
+    margin: 20px;
     width: 50%;
     line-height: 27px;
     font-size: 1em; }
@@ -109,12 +154,25 @@ p {
 section h3 {
   font-size: 30px;
   text-transform: uppercase;
-  padding: 20px 0; }
+  padding-top: 40px;
+  margin-top: 40px;
+  padding-bottom: 20px; }
+
+section .iconos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 40px 0;
+  text-align: bottom; }
+  section .iconos img {
+    padding: 20px 0;
+    color: #B7986D; }
 
 .footerDos {
   margin-top: 20px;
   width: 100%;
-  background: #ba5a31;
+  background: #333333;
   border-radius: 5px;
   list-style: none; }
   .footerDos li {
@@ -131,14 +189,22 @@ section h3 {
     justify-content: center;
     padding: 50px 0; }
 
+.headerTres {
+  width: 100%;
+  height: 300px; }
+
 .mainTres {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  margin-bottom: 40px;
-  margin-top: 40px; }
+  margin: 40px auto;
+  text-align: center;
+  text-transform: justify; }
+  .mainTres div {
+    width: 100%; }
+    .mainTres div img {
+      width: 50%; }
   .mainTres .img {
     width: 100%;
     height: auto; }
@@ -148,9 +214,14 @@ section h3 {
     margin-left: 20px;
     width: 100%;
     text-align: justify; }
-    .mainTres .parrafo h4 {
-      font-size: 20px;
-      margin-bottom: 20px; }
+
+main .size {
+  max-width: 70%;
+  margin: auto; }
+
+main h4 {
+  font-size: 30px;
+  margin-bottom: 20px; }
 
 .productos section {
   display: grid;
@@ -169,6 +240,24 @@ section h3 {
 .productos section .foto img:hover {
   opacity: 1;
   transition: all .4s ease; }
+
+main {
+  width: 100%;
+  max-width: 70%;
+  margin: auto; }
+  main .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #b7986d;
+    margin-bottom: 20px; }
+
+form {
+  margin-top: 40px;
+  padding-top: 40px; }
+  form .btn-primary {
+    background-color: #b7986d;
+    text-align: center; }
 
 @media screen and (max-width: 600px) {
   body {
@@ -239,6 +328,9 @@ body {
   grid-area: footer; }
 
 .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   list-style: none; }
   .navBar li {
     display: inline-block;
@@ -265,7 +357,10 @@ body {
     font-weight: 600; }
 
 .main__frase {
-  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-items: center;
   color: #fff;
   text-align: center;
   padding-bottom: 50px;
@@ -275,9 +370,9 @@ body {
     margin-bottom: 40px; }
 
 .main__btn--p {
+  text-align: center;
   display: inline-block;
   padding: 0.5em;
-  margin: 10px 0;
   color: #fff;
   border-radius: 20px;
   background: #f2542d; }
@@ -286,16 +381,17 @@ body {
   background: #F04419; }
 
 .footer {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  justify-items: center;
   position: static;
   align-items: center;
   font-size: 1.25em; }
 
 .footer__facebook--fb, .footer__instagram--ig, .footer__twitter--tw {
-  padding-right: 10px;
-  margin-right: 20px;
+  padding: 10px;
   color: #fff;
   transition: color .5s linear; }
 

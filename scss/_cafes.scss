@@ -1,16 +1,29 @@
 @mixin titulo{
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 20px;
     
 }
+
+.headerTres{
+    width: 100%;
+    height: 300px;
+}
 .mainTres {
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    justify-content: center;
     align-items:center;
     align-content: center;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin: 40px auto;
+    text-align: center;
+    text-transform: justify;
+    div{
+      width: 100%;
+      img{
+        width: 50%;
+      }
+    }
+    
+    
     .img{
       width: 100%;
       height: auto;
@@ -22,11 +35,19 @@
       margin-left: 20px;
       width: 100%;
       text-align: justify;
-      h4{
-        @include titulo;
-      }
+      
     }
   } 
+  main{ 
+    .size{
+      max-width: 70%;
+      margin: auto;
+    }
+    h4{
+      @include titulo;
+    }
+
+  }
   .productos {
     section{
       display: grid;

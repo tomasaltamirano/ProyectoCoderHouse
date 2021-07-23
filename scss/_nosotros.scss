@@ -14,7 +14,7 @@
   }
   
   .headerDos {
-  
+    width: 100%;
     justify-self: center;
     grid-area: headerDos;
   }
@@ -32,22 +32,68 @@
   }
   .background {
     background-color: #EBEBEB;
-    max-width: 1000px;
     margin: auto;
   
   }
   .color{
+    padding-top: 50px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    list-style: none;
+    
       li{
+        display: inline-block;
+        margin: 10px;
+        padding-top: 10px;
           a{
-            color: #1F1F1F
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            
           }
       }
   }
+  .color li a:hover{
+    color: #B7986D;
+  }
   .mainDos{
+    .banner{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    height: 300px;
+    background: #CCC;
+    overflow: hidden;
+    .textoEncima{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      p{
+        color: #F5F2EB;
+        text-transform: uppercase;
+        font-size: 2em;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing:10px;
+        line-height: 2em;
+      }
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+    }
       section{
+        max-width: 70%;
+        margin: auto;
           h2{
               font-size: 30px;
               text-transform: uppercase;
+              padding-top: 40px;
+              margin-top: 40px;
               padding-bottom: 20px;
           }
       }
@@ -60,7 +106,7 @@
       align-items: center;
       .texto{
           text-align: justify;
-          padding: 20px;
+          margin: 20px;
           width: 50%;
           line-height: 27px;
           font-size: 1em;
@@ -80,13 +126,27 @@
           h3{
               font-size:30px;
               text-transform: uppercase;
+              padding-top: 40px;
+              margin-top: 40px;
+              padding-bottom: 20px;
+          }
+          .iconos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding: 40px 0;
+            text-align: bottom;
+            img {
               padding: 20px 0;
+              color: #B7986D;
+            }
           }
       }
 .footerDos {
     margin-top: 20px;
     width: 100%;
-    background: #ba5a31;
+    background: #333333;
     border-radius: 5px;
     list-style: none;
   li {
