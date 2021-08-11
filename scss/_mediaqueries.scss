@@ -1,51 +1,82 @@
-@media screen and (max-width:600px) {
-    body {
-      width: auto;
-      font-size: 0.875em;
-    }
-    .mainTres {
+ @media screen and (max-width: 768px){
+   //home
+   .tipos_cafe{
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+   .galeria{
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+   footer{
+     .contacto_footer{
+       flex-direction: column;
+       justify-content: space-between;
+       flex-wrap: wrap;
+     }
+   }
+   //nosotros
+   #nosotros{
+     flex-direction: column;
+     flex-wrap: wrap;
+     justify-content: center;
+     .nosotros_img{
+      margin: 10% 20% 5% 20%;
+      width: 60%;
+     }
+     .nosotros_texto{
+      margin: auto;
+      text-align: justify;
+      
+      font-size: 1.3em;
+     }
+   }
+   //menu
+   .menu_bg{
+    width: auto;
+    margin: auto;
+     .menu_lista{
+       flex-direction: row;
+       justify-content: center;
+       
+     }
+
+   }
+   //Sucursales
+   #sucursales{
+    .card-deck{
       flex-direction: column;
-      width: 100%;
-    }
-    .mainDos{
-      div{
-        width: 100%;
-        .img{
-          width: auto;
-          margin-left: 10px;
-          margin-right: 10px;
-        }
-        .texto{
-          width: 100%;
-        }
-      }
-    }
-    .articulo {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+      justify-content: center;
     }
   }
+
+  //contacto
+  .contacto{
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+ }
   
-  @media screen and (max-width: 900px) {
-    body {
-      width: auto;
-      font-size: 0.875em;
+@media screen and (max-width:600px) {
+  #sucursales{
+    .card-deck{
+      flex-direction: column;
+      justify-content: center;
     }
-    .articulo {
-        display: flex;
+  }
+
+}
+
+
+  @media screen and (max-width:370px) {
+    footer{
+      .contacto_footer{
         flex-direction: column;
-        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
     }
-  
-    .mainTres {
-      flex-wrap: wrap;
-    }
-    .articulo {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-  
-    
   }

@@ -1,142 +1,176 @@
 @import "reseteo.scss";
 @import "nosotros.scss";
-@import "cafes.scss";
+@import "menu.scss";
+@import "sucursales.scss";
 @import "contacto.scss";
 @import "mediaqueries.scss";
 
-//estilos generales
 body {
     font-family: "Roboto", sans-serif;
     width: 100%;
     max-width: auto;
-    margin: auto;
+    margin: 0;
     text-align: center;
     letter-spacing: 1px;
     font-size: 16px;
   }
-//estilos para el fondo
-  .container {
-    background-image: url(../img/bg.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    
-  }
-//estilos del grid
-  .contenedor {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-  }
-
-.contenedor__header{
-  grid-area: header;
+#portada{
+  background-image: url("../img/BG.png");
+  height: 35rem;
 }
-
-.main { 
-  grid-area: main; 
+.ml-auto {
+  margin-left: auto !important;
 }
-
-.footer { 
-  grid-area: footer;
- }
 //menu de navegacion
-.navBar {
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  list-style: none;
-  li {
-    display: inline-block;
-    margin: 10px;
-    padding-top: 10px;
-  }
-    a {
-      padding: 10px;
-      text-decoration: none;
-      color: #fff;
+div{
+  .navbar-nav{
+    .nav-item{
+      .nav-link{
+        color: #fff;
+      }
+      .nav-link:hover{
+        color: #b7986d;
+      }
     }
+  }
 }
-.navBar li a:hover {
-  background: #f2542d;
-  border-radius: 20px;
+#portada{
+  p{
+    span{
+      color: #b7986d;
+    }
+    color: #f5f2eb;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    clear: left;
+    top: 15rem;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+  .boton_menu{
+   position: relative;
+   top: 50%;
+   background-color: #b7986d;
+   padding:12px 32px;
+   
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+  }
 }
-.main {
+#sobreNosotros{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
-    h1{
-        font-size: 1.75em;
-        color: #fcf7ed;
-        text-transform: uppercase;
-        font-weight: 600;
-        
+  width: 100%;
+  margin: 5rem auto;
+  .sobreNosotros_img{
+    width: 50%;
+    margin: 2rem auto;
     
+  }
+  .sobreNosotros_texto{
+    margin: 2rem auto;
+    width: 50%;
+    h2{
+      margin-bottom: 1.8rem;
+      font-size: 2rem;
+      font-weight: bold;
     }
+    p{
+      line-height: 1.4rem;
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
 }
-//estilos para la frase y el boton
-.main__frase{
-p {
-        color: #fff;
-        margin-bottom: 40px;
+section{
+  .titulo{
+    h5{
+      padding: 2rem;
+      margin: 2rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
     }
-
+    
+  }
+  .tipos_cafe{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    justify-items: center;
-    color: #fff;
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top:20px;
-}
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    img{
+      width: 75%;
+    }
+    p{
+     padding-top: 2rem;
+     padding-bottom: 1rem;
+     font-family: 'Bebas Neue', cursive;
+     font-size: 1.5rem;
+    }
     
-  
-.main__btn--p{
-  text-align: center;
-  display: inline-block;
-  padding: 0.5em;
-  color:#fff;
-  border-radius: 20px;
-  background: #f2542d;
+  }
+  .boton_menu{
+    display: inline-block;
+    background-color: #b7986d;
+   padding:12px 32px;
+   margin-bottom: 3rem;
+   a{
+     color: #f5f2eb;
+     text-align: center;
+     text-decoration: none;
+   }
+  }
 }
-.main__btn--p:hover{
-  background: #F04419;
+section{
+  .galeria{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: auto;
+    img{
+      width: 445px;
+    }
+  }
 }
-//estilos para el footer
-.footer {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-items: center;
-  position: static;
-  align-items: center;
-  font-size: 1.25em;
-}
-.footer__facebook--fb{
-  padding: 10px;
-  color: #fff;
-  transition:color .5s linear;
-}
-
-.footer__instagram--ig {
-  @extend .footer__facebook--fb
-}
-
-.footer__twitter--tw {
-  @extend .footer__facebook--fb
-}
-.footer__facebook--fb:hover {
-  cursor: pointer;
-  color: #f2542d;
+footer{
+  width: 100%;
+  max-width: auto;
+  .contacto_footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    height: auto;
+    color: #f5f2eb;
+    background: #333333;
+    ion-icon{
+      padding: 0.8rem;
+      background: #474747;
+      border-top: 3px solid #b7986d;
+    }
+    .color_iconos{
+      p{
+        margin-top: 15px;
+        color: #f5f2eb;
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+   
 }

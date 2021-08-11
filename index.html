@@ -12,47 +12,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
       rel="stylesheet">
       <script src="https://kit.fontawesome.com/52d961e263.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <title>Coffee House</title>
   <head>
-  <body class="container">
-    <div class="contenedor">
-      <div class="contenedor__header"> 
-        <header>
-          <nav class="navBar">
-            <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="secciones/nosotros.html">Nosotros</a></li>
-              <li><a href="secciones/cafes.html">Cafes</a></li>
-              <li><a href="secciones/contacto.html">Contacto</a></li>
-            <ul>
-          <nav>
-        </header>
+  <body>
+    <div id="portada">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Coffee House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/sucursales.html">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="secciones/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <p>Encontrá tu <span>break</span> ideal </p>
+      <a href="secciones/cafes.html" class="boton_menu">Ver menú</a>
+    </div>
+    <main id="sobreNosotros">
+      <div class="sobreNosotros_img">
+        <img src="img/nosotros.jpg" alt="nosotros">
       </div>
-        <div class="main"> 
-          <main>
-            <section>
-              <h1>Coffee House</h1>
-            </section>
-            <section class="main__frase">
-              <p>Tus cafes favoritos en un mismo lugar</p>
-              <a href="secciones/nosotros.html">
-                <p class="main__btn--p">Conocenos</p>
-              </a>
-          </section>
-          </main>
+      <div class="sobreNosotros_texto">
+        <h2>Sobre nosotros</h2>
+        <p>Somos apasionados del café y creemos que el simple acto de prepararlo y servirlo es una experiencia que tiene el poder de potenciar para mejor nuestro día, por eso queremos brindarte la calidad necesarias para que puedas vivir la experiencia de la mejor manera posible.</p>
+        <br>
+        <p>Queremos acercar el “Café de Especialidad” a mucha más gente, Creemos que el café de especialidad no es una moda, ni un gusto pasajero.
+        Afortunadamente la producción, los estudios, las técnicas y el consumo de este maravilloso grano, han evolucionado en la última década de una forma extraordinaria. Detrás de una excelente taza de café, se esconden tantos factores, tanta gente involucrada, y tanto esfuerzo, que vale la pena girar en esa dirección y consumir un producto significativamente diferenciado.</p>
+      </div>
+    </main>
+    <section>
+      <div class="titulo">
+        <h5>Creemos en un café que sabe increible</h5>
+      </div>
+      <div class="tipos_cafe">
+        <div>
+          <img src="img/coffee-item-1.png" alt="">
+          <p>Filtrado</p>
         </div>
-          <footer class="footer">
-            <div class="footer__facebook--fb">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-            <div class="footer__instagram--ig">
-              <i class="fab fa-instagram"></i>
-            </div>
-            <div class="footer__twitter--tw">
-              <i class="fab fa-twitter"></i>
-            </div>
-          </footer>
+        <div>
+          <img src="img/coffee-item-2.png" alt="">
+          <p>Mocha Latte</p>
+        </div>
+        <div>
+          <img src="img/coffee-item-3.png" alt="">
+          <p>Espresso</p>
+        </div>
       </div>
+      <div class="boton_menu">
+        <a href="secciones/cafes.html">Ver menú</a>
+      </div>
+    </section>
+    <section>
+      <div class="galeria">
+        <img src="img/item1.jpg" alt="">
+        <img src="img/item2.jpg" alt="">
+        <img src="img/item3.jpg" alt="">
+      </div>
+    </section>
+    <footer>
+      <div class="contacto_footer">
+        <div class="color_iconos">
+          <ion-icon name="location-outline"></ion-icon>
+          <p>Sarmiento 4319 - CABA, BA</p>
+        </div>
+        <div class="color_iconos">
+          <ion-icon name="call-outline"></ion-icon>
+          <p>+54 1122334455</p>
+        </div class="color_iconos">
+        <div class="color_iconos">
+          <ion-icon name="time-outline"></ion-icon>
+          <p>Lun - Vie: 7:00 AM - 20:00PM</p>
+      </div>
+    </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </html>
